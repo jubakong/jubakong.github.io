@@ -727,6 +727,7 @@ $("#submit").on("click", function () {
 		    
 					if (email == '' || !validateEmail(email)) {
 					    alert("이메일이 유효하지 않아 알림을 드릴 수가 없습니다. ");
+              $.busyLoadFull("hide");
 					    return;
 					}
 		    
